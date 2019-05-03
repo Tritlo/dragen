@@ -15,7 +15,7 @@ dot :: a -> a
 dot x = unsafePerformIO (putStr "*" >> hFlush stdout >> return x)
 
 epsilon :: Double
-epsilon = 0.00001
+epsilon = 0.001
 
 type CostFunction = TypeEnv -> Size -> FreqMap -> Double
 
